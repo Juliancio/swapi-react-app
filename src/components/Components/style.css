@@ -1,0 +1,116 @@
+.banner-film {
+    background-image: url('../../assets/images/banners/4.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-film {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.film-info h1 {
+    justify-content: left;
+}
+
+.starships {
+    height: 100px;
+}
+
+.container-card {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-image {
+    max-width: 120px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.film-info-2 {
+    display: flex;
+}
+
+.film-info-2 p {
+    margin-right: 20px;
+}
+
+.image-film {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.film-details {
+    background: rgba(0, 0, 0, 0.7);
+    max-width: 1280px;
+    min-height: 300px;
+    display: flex;
+    border-radius: 20px;
+    margin: 25px;
+}
+
+.film-image {
+    min-width: 300px;
+}
+
+.film-info {
+    color: white;
+    padding: 30px;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 501px) and (max-width: 845px) {
+    .film-details {
+        display: block;
+        width: 70%;
+        margin: 30px auto;
+    }
+    .film-image {
+        min-width: 200px;
+    }
+    .image-film {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    .film-details {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .film-image {
+        min-width: 50px;
+    }
+    .film-info2 {
+        display: block;
+    }
+    .container-card {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: normal;
+    }
+
+    .card-image {
+        flex: 0 0 auto;
+        margin: 5px;
+    }
+}
